@@ -51,8 +51,14 @@
 </style>
 
 <script>
+
+    function openModal(){
+        let modal = document.getElementById("modal");
+        modal.style.display = "block";
+    }
+
     // When the user clicks on <span> (x), close the modal
-        function handleModalClose(event) {
+    function handleModalClose(event) {
         event.preventDefault();
         let modal = event.currentTarget.parentNode.parentNode;
         modal.style.display = "none";
